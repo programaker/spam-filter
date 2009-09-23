@@ -1,0 +1,15 @@
+from Thiago Torres <ttferreira@gmail.com>
+to Marcelo da Silva Gomes <programaker@gmail.com>
+date Wed, Sep 16, 2009 at 9:33 AM
+subject Ajudinha Java
+mailed-by gmail.com
+ 
+MArcelão,
+
+Sabe como eu posso ver se existe um arquivo no ftp, somente passando parte do nome?
+
+Ex,
+
+Arquivo: RE090902233200
+
+busco passando só:  REC090902
