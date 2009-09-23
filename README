@@ -1,0 +1,6 @@
+This project is just a test for CI-Bayes Java library, wich is used to classify 
+things based on examples (training).
+
+In this case, i'm using it to classify emails in "bad" (spam) and "good" (no spam).
+
+The bad-email-training uses some spams from SpamAssassin and the good-email-training uses my own good emails.
