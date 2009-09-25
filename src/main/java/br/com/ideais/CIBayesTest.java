@@ -1,11 +1,13 @@
 package br.com.ideais;
 
 
+import static org.junit.Assert.assertTrue;
+
+import java.util.Arrays;
 import java.util.List;
 
 import org.junit.BeforeClass;
 import org.junit.Test;
-import static org.junit.Assert.*;
 
 import com.enigmastation.classifier.FisherClassifier;
 import com.enigmastation.classifier.Trainer;
@@ -36,6 +38,7 @@ public class CIBayesTest {
 		
 		for (String evilMail : evilMails) {
 			String classification = classifier.getClassification(evilMail);
+			System.out.println(Arrays.toString(classifier.getProbabilities(evilMail)));
 			Boolean isEvil = "evil".equals(classification);
 			allEvil &= isEvil;
 		}
@@ -50,6 +53,7 @@ public class CIBayesTest {
 		
 		for (String goodMail : goodMails) {
 			String classification = classifier.getClassification(goodMail);
+			System.out.println(Arrays.toString(classifier.getProbabilities(goodMail)));
 			Boolean isGood = !("evil".equals(classification));
 			allGood &= isGood;
 		}
